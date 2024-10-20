@@ -1,0 +1,197 @@
+/*Programmer: Jenn Woldt
+Date:
+Project: Unit 2
+*/
+
+/*css reset*/
+body, header, nav, main, footer
+{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+body
+{
+    background-color:black;
+}
+img
+{
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
+.home img
+{
+    max-width: 100%;
+    display: block;
+}
+nav
+{
+    background-color: darkmagenta;
+    opacity: 60%;
+}
+nav ul
+{
+    list-style-type: none;
+    text-align: center;
+}
+nav li
+{
+    display: block;
+    font-size: 1.5em;
+    font-family: Silkscreen;
+    font-weight: bolder;
+    border-top: solid 1px;
+}
+nav li a
+{
+    display: block;
+    color: aquamarine;
+    padding: 0.5em, 2em;
+    text-decoration: wavy;
+}
+
+a.tech-image
+{
+    display: none;
+}
+.main
+{
+    font-family: Sixtyfour;
+}
+main
+{
+    padding: 2%;
+    font-family: Sixtyfour;
+    color: chartreuse;
+    text-shadow: 10px ;
+    text-align: center;
+}
+main p
+{
+    font-size: 2em;
+    color: aquamarine;
+    text-align: center;
+    font-family: Sixtyfour;
+}
+main h1 
+{
+    padding-top: 2%;
+    text-shadow: 1px 3px darkmagenta;
+    font-size: 3em;
+    font-family: Silkscreen;
+}
+main h4
+{
+    padding: 2%;
+    text-shadow: 1px 3px darkmagenta;
+    font-size: 3em;
+    font-family: Silkscreen;
+}
+.auto
+{
+    padding: 2%;
+    font-size: 1em;
+    color: chartreuse;
+}
+main ul
+{
+    list-style-type: disc;
+}
+.link
+{
+    color: chartreuse;
+    text-decoration:wavy;
+    font-weight: bolder;
+    font-style: italic;
+}
+.round
+{
+    border: 1px solid;
+    padding: 5px;
+    box-shadow: 100px 5px 100px chartreuse;   
+}
+aside
+{
+    grid-column: 1 / span 2;
+}
+figure 
+{
+    border: 1px solid chartreuse;
+    box-shadow: 4px 4px 1px darkmagenta;
+    max-width: 200px;
+    margin: auto;
+}
+figcaption
+{
+    padding: 2%;
+    border: 1px solid chartreuse;
+    text-shadow: 1px 3px darkmagenta;
+}
+article
+{
+    font-size: 2em;
+    color: aquamarine;
+    text-align: center;
+    text-shadow: 10px chartreuse;
+}
+footer
+{
+    text-align: center;
+    font-size: 1em;
+    background-color: darkmagenta;
+    color: chartreuse;
+    padding: 1% 0%;
+}
+footer a
+{
+    color: chartreuse;
+}
+@media screen and (min-width:620px)
+{
+    a.tech-image{
+        display: block;
+        
+    }
+    .mobile h1, h3{
+        display: none;
+    }
+    nav li {
+        display: inline-block;
+        font-size: 2em;
+    }
+    nav li a{
+        padding: 0.5em;
+    }
+    aside{
+        display:grid;
+        grid-template-columns: auto auto auto auto;
+        grid-gap: 1px;
+    }
+
+}
+@media screen and (min-width: 1921px){
+    body{
+        background: linear-gradient(black, darkmagenta);
+    }
+    main{
+        background-color: black;
+    }
+    aside{
+        grid-template-columns: auto auto auto auto;
+    }
+}
+@media screen and (min-width: 1000px){
+    nav li{
+        font-size: 2em;
+    }
+    nav li a{
+        padding: 2em, 1em;
+    }
+    a:hover{
+        color: darkmagenta;
+        background-color: chartreuse;
+        opacity: 1;
+    }
+}
